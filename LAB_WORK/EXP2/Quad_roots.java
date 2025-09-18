@@ -1,3 +1,4 @@
+package LAB_WORK.EXP2;
 
 public class Quad_roots {
     public static void main(String[] args) {

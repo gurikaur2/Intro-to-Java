@@ -1,3 +1,4 @@
+package LAB_WORK.EXP2;
 import java.util.*;
 
 class CheckVowel{
