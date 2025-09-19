@@ -1,10 +1,11 @@
-/* Write a Java program to read numbers in an integer array of size 5 and display the array in reverse order:
+/* Write a Java program to read numbers in an integer array of size 5 and remove duplicate elements from the array.
 Definition of Done (DoD):
 DoD 1: The program should ask the user to enter the elements of the array.
-DoD 2: The program should display the reversed array.
+DoD 2: The program should display the array after removing duplicates.
  */
+
 import java.util.*;
-public class Array_reverse {    
+public class Duplicate {    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the number of elements in the array: ");
@@ -16,9 +17,15 @@ public class Array_reverse {
             arr[i] = scan.nextInt();
         }
 
-        System.out.println("Reversed Array:");
-        for (int i = n - 1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
+        // Using a LinkedHashSet to maintain insertion order and remove duplicates
+        Set<Integer> set = new LinkedHashSet<>();
+        for (int num : arr) {
+            set.add(num);
+        }
+
+        System.out.println("Array after removing duplicates:");
+        for (int num : set) {
+            System.out.print(num + " ");
         }
         System.out.println();
     }
