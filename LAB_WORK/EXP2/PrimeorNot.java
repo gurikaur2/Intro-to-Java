@@ -1,4 +1,4 @@
-package LAB_WORK.EXP2;
+
 public class PrimeorNot {
     public static void main(String[] args) {
         int num, i, count = 0;
