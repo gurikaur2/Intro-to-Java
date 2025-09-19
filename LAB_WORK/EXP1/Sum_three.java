@@ -15,8 +15,5 @@ class Sum_three
 			num=num/10;
 		}
 		System.out.println("Sum of 3 digits are: "+sum);
-			
-
-
 	}
 		}
